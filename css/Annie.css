@@ -295,7 +295,7 @@ header .h-footer ul {
 
 header .h-footer ul li {
 	display: inline-block;
-	writing-mode: tb-rl;
+	/* writing-mode: tb-rl; */
 	padding: 0.2em;
 	margin: auto 30px;
 }
