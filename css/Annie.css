@@ -176,9 +176,9 @@ sub {
 */
 
 code {
-	font-family: Georgia, Times New Roman, Times, serif;
+	font-family: Arial, 'Courier New', "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1em;
-	font-style: italic;
+	/* font-style: italic; */
 	color: #c7254e;
 	background: rgba(220, 220, 220, 0.25);
 }
