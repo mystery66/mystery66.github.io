@@ -193,11 +193,11 @@
 }
 
 .article-content code {
-	font-family: Georgia, Times New Roman, Times, serif;
-	font-size: 1em;
-	font-style: italic;
+	/* font-family: Georgia, Times New Roman, Times, serif; */
+	font-size: 1.2em;
+	/* font-style: italic; */
 	background: rgba(220, 220, 220, 0.25);
-	color: #c7254e;
+	/* color: #c7254e; */
 }
 
 
