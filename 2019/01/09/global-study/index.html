@@ -298,7 +298,7 @@
 	更新于
 	<a href="/mystery66.github.io/2019/01/09/global-study/" itemprop="url">
 		<time datetime="2019-01-09T06:14:27.000Z" itemprop="dateUpdated">
-	  		2019-01-09
+	  		2019-01-10
 	  </time>
 	</a> 	
 
@@ -330,16 +330,18 @@
 
 	<div class="article-content" id="article-content">
 		<h2 id="1-URI编码方法"><a href="#1-URI编码方法" class="headerlink" title="1.URI编码方法"></a>1.URI编码方法</h2><h3 id="Global对象的encodeURI-和encodeURIComponent"><a href="#Global对象的encodeURI-和encodeURIComponent" class="headerlink" title="Global对象的encodeURI()和encodeURIComponent()"></a>Global对象的encodeURI()和encodeURIComponent()</h3><p> &nbsp;&nbsp;encodeURI()主要用于对整个URI,而encodeURIComponent主要对URI中的某一段进行编码。它们的主要区别在于，encodeURI()不会对特殊的字符进行编码，例如冒号、正斜杠、问号和井字号；而encodeURIComponent()则会对他们发现的任何非标准字符进行编码。</p>
-<pre><code> var uri = &#39;https://juejin.im/  post/5c342e0fe51d45524975d9c1&#39;;
- encodeURI(uri);   //&quot;https://juejin.im/%20post/5c342e0fe51d45524975d9c1&quot;
- encodeURIComponent(uri);  //&quot;https%3A%2F%2Fjuejin.im%2F%20post%2F5c342e0fe51d45524975d9c1&quot;
+<pre class="line-numbers language-bash"><code class="language-bash"> var uri <span class="token operator">=</span> <span class="token string">'https://juejin.im/  post/5c342e0fe51d45524975d9c1'</span><span class="token punctuation">;</span>
+ encodeURI<span class="token punctuation">(</span>uri<span class="token punctuation">)</span><span class="token punctuation">;</span>   //<span class="token string">"https://juejin.im/%20post/5c342e0fe51d45524975d9c1"</span>
+ encodeURIComponent<span class="token punctuation">(</span>uri<span class="token punctuation">)</span><span class="token punctuation">;</span>  //<span class="token string">"https%3A%2F%2Fjuejin.im%2F%20post%2F5c342e0fe51d45524975d9c1"</span>
 
-</code></pre><p> &nbsp;&nbsp;使用encodeURI()编码后的结果是除了空格之外的其他字符原封不动，只有空格被替换为%20，而encodeURIComponent()则会替换所有的非字母的数字字符。这也是可以对整个URI使用encodeURI(),而只能对附加在现有的URI后面的字符串使用encodeURIComponent()的原因所在。</p>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p> &nbsp;&nbsp;使用encodeURI()编码后的结果是除了空格之外的其他字符原封不动，只有空格被替换为%20，而encodeURIComponent()则会替换所有的非字母的数字字符。这也是可以对整个URI使用encodeURI(),而只能对附加在现有的URI后面的字符串使用encodeURIComponent()的原因所在。</p>
 <p> &nbsp;&nbsp;与encodeURI()和encodeURIComponent相对应的方法分别是decodeURI()和decodeURIComponent().作用与encodeURI()和encodeURIComponent相反。</p>
-<pre><code> var uri = &#39;https://juejin.im/%20post/5c342e0fe51d45524975d9c1&#39;;
- decodeURI(uri);   //https://juejin.im/  post/5c342e0fe51d45524975d9c1&quot;
- decodeURIComponent(uri);   //&#39;https://juejin.im/  post/5c342e0fe51d45524975d9c1&#39;
-</code></pre><h2 id="2-Math对象"><a href="#2-Math对象" class="headerlink" title="2.Math对象"></a>2.Math对象</h2><h3 id="一些属性"><a href="#一些属性" class="headerlink" title="一些属性"></a>一些属性</h3><ul>
+<pre class="line-numbers language-bash"><code class="language-bash"> var uri <span class="token operator">=</span> <span class="token string">'https://juejin.im/%20post/5c342e0fe51d45524975d9c1'</span><span class="token punctuation">;</span>
+ decodeURI<span class="token punctuation">(</span>uri<span class="token punctuation">)</span><span class="token punctuation">;</span>   //https://juejin.im/  post/5c342e0fe51d45524975d9c1"
+ decodeURIComponent<span class="token punctuation">(</span>uri<span class="token punctuation">)</span><span class="token punctuation">;</span>   //<span class="token string">'https://juejin.im/  post/5c342e0fe51d45524975d9c1'</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="2-Math对象"><a href="#2-Math对象" class="headerlink" title="2.Math对象"></a>2.Math对象</h2><h3 id="一些属性"><a href="#一些属性" class="headerlink" title="一些属性"></a>一些属性</h3><ul>
 <li>Math.E     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 自然对数的底数，即常量e<br></li>
 <li>Math.LN10  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10的自然对数<br></li>
 <li>Math.LN2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2的自然对数<br></li>
@@ -350,22 +352,25 @@
 <li>Math.SQRT2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2的平方根</li>
 </ul>
 <h3 id="min-和max-方法"><a href="#min-和max-方法" class="headerlink" title="min()和max()方法"></a>min()和max()方法</h3><p>&nbsp;&nbsp;用于确定一组数组中最大值和最小值，这两个方法都可以接受多个数值参数。</p>
-<pre><code>var max = Math.max([23,34,26,56,71])
-alert(max) //71
-var min =  Math.min([23,34,26,56,71])
-alert(min) //23
-</code></pre><p>也可以借用Math的max()和min()方法</p>
-<pre><code>var value = [23,34,26,56,71]
-var max = Math.max.apply(Match,value)
-</code></pre><p>这个技巧的关键是把Math对象作为apply()的第一个参数，从而正确的设置this值。然后，可以将任何数组做为第二个参数</p>
+<pre class="line-numbers language-bash"><code class="language-bash">var max <span class="token operator">=</span> Math.max<span class="token punctuation">(</span><span class="token punctuation">[</span>23,34,26,56,71<span class="token punctuation">]</span><span class="token punctuation">)</span>
+alert<span class="token punctuation">(</span>max<span class="token punctuation">)</span> //71
+var min <span class="token operator">=</span>  Math.min<span class="token punctuation">(</span><span class="token punctuation">[</span>23,34,26,56,71<span class="token punctuation">]</span><span class="token punctuation">)</span>
+alert<span class="token punctuation">(</span>min<span class="token punctuation">)</span> //23
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>也可以借用Math的max()和min()方法</p>
+<pre class="line-numbers language-bash"><code class="language-bash">var value <span class="token operator">=</span> <span class="token punctuation">[</span>23,34,26,56,71<span class="token punctuation">]</span>
+var max <span class="token operator">=</span> Math.max.apply<span class="token punctuation">(</span>Match,value<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>这个技巧的关键是把Math对象作为apply()的第一个参数，从而正确的设置this值。然后，可以将任何数组做为第二个参数</p>
 <h3 id="舍入方法"><a href="#舍入方法" class="headerlink" title="舍入方法"></a>舍入方法</h3><ul>
 <li>Math.ceil()向上舍入 （Math.ceil(2.1) 为3）</li>
 <li>Math.floor()向下舍入 （Math.floor(2.1) 为2）</li>
 <li>Math.round()标准舍入（即四舍五入）</li>
 </ul>
 <h3 id="random-方法"><a href="#random-方法" class="headerlink" title="random()方法"></a>random()方法</h3><p>  Math.random()返回任意一个大于或等于0小于1的数（0 &lt;= Math.random() &lt; 1）</p>
-<pre><code>  var num = Math.floor(Math.random() *10 + 1); //返回一个0~10的随机数
-</code></pre>	
+<pre class="line-numbers language-bash"><code class="language-bash">  var num <span class="token operator">=</span> Math.floor<span class="token punctuation">(</span>Math.random<span class="token punctuation">(</span><span class="token punctuation">)</span> *10 + 1<span class="token punctuation">)</span><span class="token punctuation">;</span> //返回一个0~10的随机数
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+	
 	</div>
 	
 	<div id="current-post-cover" data-scr="/mystery66.github.io/img/cart_cover.jpg"></div>
@@ -381,6 +386,10 @@ var max = Math.max.apply(Match,value)
 				
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
+		
+			<a href="/mystery66.github.io/2019/01/10/Object-defineProperty-study/" title="对象———Object.defineProperty" rel="prev">
+				&laquo;上一篇
+			</a>
 		
 		
 			<a href="/mystery66.github.io/2019/01/08/hello-world/" title="Hello World" rel="next">
@@ -398,6 +407,25 @@ var max = Math.max.apply(Match,value)
 
 <div class="relate-post">
 	<ul>
+		
+				<li>
+					<div>
+						<a href="/mystery66.github.io/2019/01/10/Object-defineProperty-study/" title="对象———Object.defineProperty">
+							对象———Object.defineProperty
+						</a>
+						<p>
+							理解对象&nbsp;&nbsp;创建自定义对象最简单的方式就是创建一个Object实例，然后在为它添加属性和方法，如下所示：
+var person = new Object();
+person.name = 'cjk';
+person...
+						</p>
+					</div>
+
+					<a href="/mystery66.github.io/2019/01/10/Object-defineProperty-study/" title="对象———Object.defineProperty">				
+						<img src="/mystery66.github.io/img/cart_cover.jpg" class="relateImg" alt="对象———Object.defineProperty">
+					</a>
+				</li>											
+		
 		
 				<li>
 					<div>
