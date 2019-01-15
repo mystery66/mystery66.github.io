@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | Hexo
+      编写高质量js代码的要求 | Hexo
     
   </title>
   <meta name="author" content="cjk">
@@ -115,7 +115,7 @@
 				<!-- Page title -->
 				<p>
 					
-						当前文章&nbsp;:&nbsp;《Hello World》
+						当前文章&nbsp;:&nbsp;《编写高质量js代码的要求》
 					
 				</p>
 				<!-- Progress bar -->
@@ -278,8 +278,8 @@
 	
 	<div class="article-title">
 		
-	<a href="/mystery66.github.io/2019/01/08/hello-world/" itemprop="url">
-		Hello World
+	<a href="/mystery66.github.io/2019/01/15/js/" itemprop="url">
+		编写高质量js代码的要求
 	</a>
 
 	</div>
@@ -288,17 +288,17 @@
 		<span>
 			
 	发布于
-	<a href="/mystery66.github.io/2019/01/08/hello-world/" itemprop="url">
-		<time datetime="2019-01-08T07:36:25.782Z" itemprop="datePublished">
-	  		2019-01-08
+	<a href="/mystery66.github.io/2019/01/15/js/" itemprop="url">
+		<time datetime="2019-01-15T03:35:48.000Z" itemprop="datePublished">
+	  		2019-01-15
 	  </time>
 	</a> 
 
 	/
 	更新于
-	<a href="/mystery66.github.io/2019/01/08/hello-world/" itemprop="url">
-		<time datetime="2019-01-08T07:36:25.782Z" itemprop="dateUpdated">
-	  		2019-01-08
+	<a href="/mystery66.github.io/2019/01/15/js/" itemprop="url">
+		<time datetime="2019-01-15T03:35:48.000Z" itemprop="dateUpdated">
+	  		2019-01-15
 	  </time>
 	</a> 	
 
@@ -306,12 +306,18 @@
 		/
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/mystery66.github.io/tags/js/" class=" ">
+			js
+		</a>
+	
+		
 		</span>
 		/
 		
 
-    <span class="leancloud_visitors" id="/mystery66.github.io/2019/01/08/hello-world/_visitors" data-url="/mystery66.github.io/2019/01/08/hello-world/" data-title="Hello World">
+    <span class="leancloud_visitors" id="/mystery66.github.io/2019/01/15/js/_visitors" data-url="/mystery66.github.io/2019/01/15/js/" data-title="编写高质量js代码的要求">
         热度
         <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
     </span>
@@ -320,7 +326,7 @@
 
 
 
-    <span class="leancloud_likes" id="/mystery66.github.io/2019/01/08/hello-world/_likes" data-url="/mystery66.github.io/2019/01/08/hello-world/" data-title="Hello World" rel="unlike">
+    <span class="leancloud_likes" id="/mystery66.github.io/2019/01/15/js/_likes" data-url="/mystery66.github.io/2019/01/15/js/" data-title="编写高质量js代码的要求" rel="unlike">
         喜欢
         <i class="fa fa-heart"></i>
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
@@ -329,19 +335,47 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+		<h2 id="全局变量问题"><a href="#全局变量问题" class="headerlink" title="全局变量问题"></a>全局变量问题</h2><p>  过多的定义全局变量，可能会导致变量名覆盖问题（多人协作写的代码，自己并不是很清楚其他人定义的全局变量）。所以尽可能少定义全局变量。特别是当我们引用第三方插件库时，自定义全局变量和插件中的变量重名容易出问题。</p>
+<p>  js在变量未声明就可以使用，这样会隐式创建全局变量，这并不是我们想要的，所以变量一定要先声明（隐式创建的变量可以用delete删除，但声明过的变量不能用delete删除）。</p>
+<pre class="line-numbers language-bash"><code class="language-bash">  var a<span class="token operator">=</span> 1<span class="token punctuation">;</span>
+  b <span class="token operator">=</span> 2<span class="token punctuation">;</span>
+  c <span class="token operator">=</span> 3<span class="token punctuation">;</span>
+  delete a   // <span class="token boolean">false</span>
+  delete b   // <span class="token boolean">true</span>
+  delete c  // <span class="token boolean">true</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  从技术层面来说，隐式创建的全局变量并不是真正的全局变量，但他们是全局对象的属性，属性可以被删除，变量不可以。</p>
+<p>  此此要注意变量提升的问题。函数是一等功公民，变量的定义都是先声明。所以为了可读性，把预先需要的变量先声明。可以提高可读性</p>
+<p>  在利用for循环时，以遍历数组为例，最好利用一个变量去获取数组的长度。以下为例：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">  var arr <span class="token operator">=</span> <span class="token punctuation">[</span>1,2,3,4<span class="token punctuation">]</span>
+  for<span class="token punctuation">(</span>var i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span>arr.length<span class="token punctuation">;</span> i++<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    //一些操作
+  <span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  上面的代码每次循环的时候都要去获取数组的长度，这样无疑让机器多做了几次计算，很明显代码质量不佳。推荐下面的例子：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">   var arr <span class="token operator">=</span> <span class="token punctuation">[</span>1,2,3,4<span class="token punctuation">]</span>
+   for<span class="token punctuation">(</span>var i <span class="token operator">=</span> 0, len <span class="token operator">=</span> arr.length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span>len<span class="token punctuation">;</span> i++<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    //一些操作
+  <span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  for in 枚举会遍历原型链上的属性，所以可以添加判断条件</p>
+<pre class="line-numbers language-bash"><code class="language-bash">  var person <span class="token operator">=</span> <span class="token punctuation">{</span>
+     name: <span class="token string">'cjk'</span>,
+     age: <span class="token string">'22'</span>,
+     job: <span class="token string">'web'</span>
+  <span class="token punctuation">}</span>
+  if<span class="token punctuation">(</span>typeof Object.prototype.sayName <span class="token operator">==</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Object.prototype.sayName <span class="token operator">=</span> function<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> this.name
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+for<span class="token punctuation">(</span>i <span class="token keyword">in</span> person<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  if<span class="token punctuation">(</span>person.hasOwnProperty<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console.log<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 	
 	</div>
 	
@@ -359,10 +393,10 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/mystery66.github.io/2019/01/09/global-study/" title="Global对象和Math方法笔记" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/mystery66.github.io/2019/01/10/Object-defineProperty-study/" title="对象———Object.defineProperty" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
       		
@@ -375,23 +409,6 @@
 
 <div class="relate-post">
 	<ul>
-		
-				<li>
-					<div>
-						<a href="/mystery66.github.io/2019/01/15/js/" title="编写高质量js代码的要求">
-							编写高质量js代码的要求
-						</a>
-						<p>
-							全局变量问题  过多的定义全局变量，可能会导致变量名覆盖问题（多人协作写的代码，自己并不是很清楚其他人定义的全局变量）。所以尽可能少定义全局变量。特别是当我们引用第三方插件库时，自定义全局变量和插件中的变量重名容易出问题。
-  js在...
-						</p>
-					</div>
-
-					<a href="/mystery66.github.io/2019/01/15/js/" title="编写高质量js代码的要求">				
-						<img src="/mystery66.github.io/img/cart_cover.jpg" class="relateImg" alt="编写高质量js代码的要求">
-					</a>
-				</li>											
-		
 		
 				<li>
 					<div>
@@ -424,6 +441,22 @@ person...
 
 					<a href="/mystery66.github.io/2019/01/09/global-study/" title="Global对象和Math方法笔记">				
 						<img src="/mystery66.github.io/img/cart_cover.jpg" class="relateImg" alt="Global对象和Math方法笔记">
+					</a>
+				</li>											
+		
+		
+				<li>
+					<div>
+						<a href="/mystery66.github.io/2019/01/08/hello-world/" title="Hello World">
+							Hello World
+						</a>
+						<p>
+							Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+						</p>
+					</div>
+
+					<a href="/mystery66.github.io/2019/01/08/hello-world/" title="Hello World">				
+						<img src="/mystery66.github.io/img/cart_cover.jpg" class="relateImg" alt="Hello World">
 					</a>
 				</li>											
 		
